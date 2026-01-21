@@ -1,0 +1,19 @@
+# SG-COAL-Logistics-Analytics-SA
+Logistics-Analytics-SA
+
+SG Coal: Fleet Performance & Logistics Dashboard
+
+​Project Overview
+
+​This repository contains a data analytics project focused on South African mining logistics. The goal is to analyze haulage data to improve fleet efficiency and reduce operational costs.
+
+​Data Insights (The "Why")
+​Using a 50-row dataset, this project tracks:
+​Fuel Efficiency (km/L): Identifying which trucks are over-consuming fuel.
+​Driver Performance: Monitoring idling times that delay coal delivery.
+​Route Optimization: Comparing "Pit-to-Crusher" vs. "Mine-to-Port" performance.
+
+​Skills Demonstrated
+​Version Control: Managed via GitHub for data integrity.
+​Data Preparation: Structuring raw CSV data for Power BI ingestion.
+​DAX Analysis: (In Progress) Implementation of logistics-specific measures.
