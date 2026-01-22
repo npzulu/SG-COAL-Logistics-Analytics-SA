@@ -17,3 +17,17 @@ Logistics-Analytics-SA
 ​Version Control: Managed via GitHub for data integrity.
 ​Data Preparation: Structuring raw CSV data for Power BI ingestion.
 ​DAX Analysis: (In Progress) Implementation of logistics-specific measures.
+
+
+#Added Data Quality Report
+
+​1. Structural Integrity Check
+​Column Quality: Verified 100% "Valid" status across all columns (TripID, Date, Tonnage, etc.) with 0% empty or error cells.
+​Data Type Consistency: Ensured all numerical columns (Tonnage, Distance_KM) are cast as Decimal Numbers and the Date column is cast to the South African regional date format.
+​2. Domain Logic Validation
+​Instead of manual checking, the following Power BI Data Profiling tools were used to flag anomalies:
+​Tonnage Thresholds: Used "Column Statistics" to verify that all loads are between 30 and 36 tons, aligning with standard coal side-tipper capacities.
+​Fuel Logic: Confirmed through "Column Distribution" that no trips recorded zero fuel usage, ensuring cost calculations are accurate.
+​Idling Analysis: Monitored the distribution of "IdlingTime_Min" to ensure no outliers existed that would skew the fleet utilization average.
+​3. Ongoing Maintenance
+​Because this project uses a Live GitHub Link, any new data pushed to the repository is automatically subjected to these same Power Query validation rules upon refresh.
